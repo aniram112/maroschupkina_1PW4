@@ -29,20 +29,20 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCell" id="aiR-TQ-OBf" customClass="NoteCell" customModule="maroschupkina_1PW4" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="15" width="350" height="90.5"/>
+                                        <rect key="frame" x="32" y="15" width="350" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2WE-f2-8De">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="90.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPq-Gs-gZs">
-                                                    <rect key="frame" x="8" y="8" width="104.5" height="29"/>
+                                                    <rect key="frame" x="8" y="8" width="104.5" height="24.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <color key="textColor" red="0.028616999420000001" green="0.41710153840000003" blue="0.4407194472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="descriptionLabel my description label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1af-Fh-imU">
-                                                    <rect key="frame" x="8" y="39" width="299.5" height="21.5"/>
+                                                    <rect key="frame" x="8" y="34.5" width="334" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299.5" id="tqm-Q6-I4b"/>
                                                     </constraints>
@@ -53,15 +53,16 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1af-Fh-imU" secondAttribute="trailing" constant="8" id="6WT-EJ-gDg"/>
+                                                <constraint firstAttribute="trailing" secondItem="1af-Fh-imU" secondAttribute="trailing" constant="8" id="6WT-EJ-gDg"/>
                                                 <constraint firstItem="1af-Fh-imU" firstAttribute="top" secondItem="qPq-Gs-gZs" secondAttribute="bottom" constant="2" id="VfV-hC-wQP"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qPq-Gs-gZs" secondAttribute="leading" constant="200" id="XSV-uz-IaN"/>
                                                 <constraint firstItem="qPq-Gs-gZs" firstAttribute="top" secondItem="2WE-f2-8De" secondAttribute="top" constant="8" id="Yzm-PP-bGs"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1af-Fh-imU" secondAttribute="bottom" constant="30" id="Zwi-Ld-gtL"/>
                                                 <constraint firstItem="qPq-Gs-gZs" firstAttribute="leading" secondItem="2WE-f2-8De" secondAttribute="leading" constant="8" id="cUm-VT-fPj"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="qPq-Gs-gZs" secondAttribute="trailing" constant="237.5" id="fRu-VS-PWJ"/>
                                                 <constraint firstItem="1af-Fh-imU" firstAttribute="leading" secondItem="2WE-f2-8De" secondAttribute="leading" constant="8" id="rcc-gk-u2w"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="350" height="86"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="20"/>
